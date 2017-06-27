@@ -42,3 +42,21 @@ reboot and run following commands
 
 sudo modprobe w1-gpio
 sudo modprobe w1-therm
+
+
+## Client
+
+To run client/simplebrew.py on Mac OS
+
+1. Install homebrew www.brew.sh
+2. # sudo easy_install virtualenv
+3. # brew install python3
+4. # virtualenv -p /usr/local/bin/python3 ~/kettlepi_env
+5. # source ~/kettlepi_env/bin/activate
+6. # cd kettlepi
+7. # pip install -r requirements.txt
+8. # cd client
+9. # python3 simplebrew.py
+10. # add ip to server
+
+
