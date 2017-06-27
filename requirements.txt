@@ -1,0 +1,9 @@
+json-rpc==1.10.3
+peewee==2.8.5
+pushbullet.py==0.10.0
+python-magic==0.4.12
+PyYAML==3.12
+requests==2.11.1
+six==1.10.0
+websocket-client==0.37.0
+Werkzeug==0.11.11

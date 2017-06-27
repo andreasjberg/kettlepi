@@ -1,0 +1,41 @@
+recipe:
+  name: Stateside
+  version: 1.0
+  abv: 6.7
+brewingsteps:
+  - name: Mash in
+    temperature: 55
+    time: 5
+    ack: prestep
+    ack_msg: Add grain
+  - name: Mash
+    temperature: 66
+    time: 55
+    user_ack: False
+  - name: Sparge
+    temperature: 77
+    time: 30
+    ack: poststep
+    ack_msg: Remove grain
+  - name: Boil
+    temperature: 98
+    time: 60
+    user_ack: True
+    ack: prestep
+    ack_msg: Start boiltimer
+  - name: Ferment
+    temperature: 20
+    time: 0
+hopschedule:
+  - name: Saaz
+    ammount: 10
+    time: 60
+  - name: Columbus
+    ammount: 10
+    time: 30
+  - name: Nelson Sauvin
+    ammount: 10
+    time: 5
+  - name: Columbus
+    ammount: 10
+    time: 0
